@@ -1,9 +1,14 @@
 package sn.supdeco.edu.models;
 
+import sn.supdeco.models.Utilisateur;
+import sn.supdeco.models.Voiture;
+
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Database {
+
     private static List<Utilisateur> utilisateurs = new ArrayList<>();
     private static List<Voiture> voitures = new ArrayList<>();
     private Database(){};

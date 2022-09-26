@@ -1,10 +1,9 @@
 package sn.supdeco.edu.services;
 
 import sn.supdeco.edu.models.Database;
-import sn.supdeco.edu.models.Utilisateur;
-import sn.supdeco.edu.models.Voiture;
+import sn.supdeco.models.Utilisateur;
+import sn.supdeco.models.Voiture;
 
-import javax.xml.crypto.Data;
 import java.rmi.RemoteException;
 import java.util.Random;
 import java.util.Scanner;
@@ -23,7 +22,7 @@ public class ParkingImpl implements IParking{
 
 
     @Override
-    public String creerVoiture(Voiture voiture,Utilisateur utilisateur) throws RemoteException {
+    public String creerVoiture(Voiture voiture, Utilisateur utilisateur) throws RemoteException {
         System.out.println(Database.geVoitures().size());
         if(Database.geVoitures().size() >5){
             return "Nous n'avons plus de place pour vous stationner ! ";
